@@ -9,8 +9,8 @@ Original file is located at
 
 from flask_wtf import FlaskForm
 
-from wtforms import SubmitField,SelectField,FloatField,DateField
-
+from wtforms import SubmitField,SelectField,FloatField
+from wtforms.fields.html5 import DateField,IntegerRangeField
 from wtforms.validators import DataRequired
 
 class DataEntryForm(FlaskForm):
