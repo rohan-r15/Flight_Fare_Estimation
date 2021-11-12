@@ -1,0 +1,174 @@
+.*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mohave',sans-serif;
+}
+body{
+	margin:0;
+}
+
+.container {
+	height: 100vh;
+	background-color: #fef9f8;
+	display: grid;
+	grid-template-rows:10px 100px auto;
+	grid-template-columns: 50fr 50fr;
+	grid-template-areas: 
+			"top-border-area top-border-area"
+			"heading heading"
+			"content-area content-area";
+			
+}
+
+.container .top-border{
+	grid-area: top-border-area;
+	background-color: #ef9273;
+}
+
+.container .h1{
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	grid-area: heading;
+	text-align:center;
+	text-decoration:underline #ef9273;
+	text-underline-position: under;
+	font-size: 290%;
+	margin-top:15px;
+
+}
+
+.container .form {
+	
+	grid-area: content-area ;
+	display: grid;
+	grid-template-rows: repeat(5, 100px);
+	grid-template-columns: 50fr 50fr;
+	grid-template-areas: 
+			"airline-area airline-area"
+			"source-area destination-area"
+			"departure-area total-stops-area"
+      "result-area result-area"
+			"button-area button-area"
+			"bottom-border-area bottom-border-area";	
+}
+
+.container .form .airline-service{
+	grid-area: airline-area;
+	align-self:center;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	
+}
+
+.container .form .source{
+	grid-area: source-area;
+	align-self:center;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	font-size: 35px;
+}
+
+.container .form .destination{
+	grid-area: destination-area;
+	align-self:center;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	font-size: 35px;
+}
+
+.container .form .departure{
+	grid-area: departure-area;
+	align-self:center;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	font-size: 35px;
+}
+
+.container .form .total-stops{
+	grid-area: total-stops-area;
+	align-self:center;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	font-size: 35px;
+}
+
+.container .form .output{
+  grid-area: result-area;
+  justify-self:center;
+  align-self:center;
+  font-family: Mohave, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  color: #444;
+}
+
+.container .form .form-label{
+	margin-left:20px;
+	color: #444;
+}
+
+.container .form #Airline{
+    height: 50px;
+    width: 500px;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Mohave, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #444;
+}
+
+.container .form #Source,
+.container .form #Destination,
+.container .form #Total_Stops {
+    height: 50px;
+    width: 250px;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Mohave, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #444;
+}
+
+.container .form #Departure_Date{
+    height: 29px;
+    width: 228px;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Mohave, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #444;
+}
+
+.container .form .form-box{
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+	width: 45px;
+	height:100%;
+	padding: 10px;
+}
+
+.container .form .button{
+	grid-area: button-area;
+	justify-self: center;
+	align-self:center;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+
+    
+}
+
+form .button input {
+   /*  height: 100%;
+    width: 92%; */
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #ef9273;
+	font-family: Mohave, Arial, Helvetica, sans-serif;
+    /* margin-left: 43px;
+    	margin-top: 10px; */
+ }
+
+

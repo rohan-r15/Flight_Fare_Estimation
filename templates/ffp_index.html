@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="ffp_style.css"> -->
+	 <link rel='stylesheet' href= {{ url_for('static',filename='ffp_style.css')}}>
+  
+	<title>Flight Fare Prediction</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mohave:ital@1&display=swap" rel="stylesheet">
+
+ </head>
+ <body>
+	<div class='container'>
+		<div class='top-border'></div>
+		<h1 class='h1'>Flight Fare Prediction</h1>
+		
+		
+		<form class='form' action="" method="POST">
+
+			<div class='airline-service'>
+				<span class='form-label'>{{ form.Airline.label }}</span> 
+				<span class='form-box'>{{ form.Airline() }}</span>
+			</div>
+
+			<div class='source'>
+				<span class='form-label source'>{{ form.Source.label }}</span>
+				<span class='form-box source'>{{ form.Source() }}</span>
+			</div>
+
+			<div class='destination'>
+				<span class='form-label'>{{ form.Destination.label }}</span>
+				<span class='form-box'>{{ form.Destination() }}</span>
+			</div>
+
+			<div class= "departure">
+				<span class='form-label'>{{ form.Departure_Date.label }}</span>
+				<span class='form-box'>{{ form.Departure_Date() }}</span>
+			</div>
+
+			<div class='total-stops'>
+				<span class='form-label'>{{ form.Total_Stops.label }}</span>
+				<span class='form-box'>{{ form.Total_Stops() }}</span>
+			</div>
+
+      <div class="output">
+          <p class='output-fare'>Estimated Flight Fare : {{ value_low }} - {{ value_high }} {{ rupees }} {{ fallback_text }}</p>
+      </div>
+			<div class='button'>
+				<span class='submit'>{{ form.submit() }}</span>
+			</div>
+
+		</form>
+		
+	</div>
+ </body>
+</html>
