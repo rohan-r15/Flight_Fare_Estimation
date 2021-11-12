@@ -29,7 +29,7 @@ class DataEntryForm(FlaskForm):
   Source = SelectField('Select Source ', choices=source)
   Destination = SelectField('Select Destination ', choices=destination)
   Total_Stops = SelectField('Select Total Stops ', choices=stop )
-  Departure_Date = DateField('Departure Date ', format='%m/%d/%Y', validators=[DataRequired()])
+  Departure_Date = DateField('Departure Date ', format='%m/%d/%Y', validators.data_required())
 
   submit = SubmitField(' Calculate Flight Fare ')
 
