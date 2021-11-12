@@ -10,7 +10,7 @@ Original file is located at
 from flask_wtf import FlaskForm
 
 from wtforms import SubmitField,SelectField,FloatField
-from wtforms.fields import DateField
+from wtforms.fields.html5 import DateField
 from wtforms.validators import DataRequired
 
 class DataEntryForm(FlaskForm):
