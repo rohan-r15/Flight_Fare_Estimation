@@ -1,8 +1,8 @@
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
-from CustomLogger.logger import Logger
+# from CustomLogger.logger import Logger
 
-logging = Logger('logFiles/test.log')
+# logging = Logger('logFiles/test.log')
 
 class Connector:
     def __init__(self):
