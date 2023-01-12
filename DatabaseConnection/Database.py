@@ -10,8 +10,8 @@ class Connector:
         :DESC: Creates connection with Database when backend thread runs.
         """
         logging.info('INFO', 'Obj created')
-        self.Client_id = 'fJFFnobyYrTUBsXcJpRWqJaE'
-        self.Client_secret = 'QdOylwGMQyYm4m97DGhMARHWC2lETI4F.uwyNl4gq_ZT8fC8nfdkUro3KiA9C+CYtORBtJ9rxcJyC5dK+vO-pa6X_KtaBsg5hF4,xiJsMbEHbdq86qwR1B500wEFt1Zj'
+        self.Client_id = 'hOYNoTvQQUtrRXJaYmdRWAQi'
+        self.Client_secret = 'dE9cD8r92xpFXU5S.yT_2iDk+m44xNP.2MT8x4nGDj5yrjDWWvFDB0i+-b,m1t.z-rjpXOUg4Wxg60BpZkMAcpa5Nqk--9knajc-T2FecdjBZNS1ySPnae+U4XFgkEps'
         cloud_config = {'secure_connect_bundle': 'secure-connect-flightdatabase.zip'}
         auth_provider = PlainTextAuthProvider(self.Client_id, self.Client_secret)
         cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
